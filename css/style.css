@@ -1238,15 +1238,33 @@ section:nth-child(even) {
         margin-left: 0;
         width: 100%;
         justify-content: center;
+        flex-direction: column;
         order: 3;
+        gap: 0.5rem;
     }
 
     .header-content .cta-buttons .btn {
         flex: 1;
+        width: 100%;
+        min-width: unset;
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
     }
 
     .page-hero {
         padding: 4rem 0;
+    }
+
+    .hero .cta-buttons,
+    .page-hero .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero .cta-buttons .btn,
+    .page-hero .cta-buttons .btn {
+        width: 100%;
+        min-width: unset;
     }
 
     .gallery-item::after {
