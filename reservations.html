@@ -13,7 +13,7 @@
     <!-- Header -->
     <header class="site-header">
         <div class="header-top">
-            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="container">
                 <div>📞 (415) 647-2222 | 📧 cuisineofnepal.sf@gmail.com</div>
                 <div>📍 3486b Mission St, San Francisco, CA 94110</div>
             </div>
@@ -29,119 +29,94 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="reservations.html" class="active">Reservations</a></li>
                         <li><a href="catering.html">Catering</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="cta-buttons">
+                        <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
+                        <a href="#reservation-form" class="btn btn-secondary btn-reserve">Reserve Table</a>
+                        <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                    </div>
                 </nav>
-                <div class="cta-buttons">
-                    <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
-                    <a href="#reservation-form" class="btn btn-secondary btn-reserve">Reserve Table</a>
-                    <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                <div class="header-actions">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span>☰</span></button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 4rem 0; min-height: auto;">
+    <section class="page-hero">
         <div class="container">
-            <h2 style="font-size: clamp(2.5rem, 6vw, 4rem);">📅 Reserve Your Table</h2>
-            <p style="font-size: clamp(1.1rem, 2.5vw, 1.5rem);">Book your dining experience at Cuisine of Nepal</p>
+            <h1>📅 Reserve Your Table</h1>
+            <p>Book your dining experience at Cuisine of Nepal</p>
         </div>
     </section>
 
     <!-- Reservation Form -->
-    <section>
+    <section id="reservation-form">
         <div class="container">
-            <div id="reservation-form" style="max-width: 800px; margin: 0 auto;">
-                <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                    <h3 style="color: var(--dark-red); margin-bottom: 2rem; font-size: 2rem; text-align: center;">Make a Reservation</h3>
-                    
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                        </div>
-
+            <div class="form-container">
+                <h3>Make a Reservation</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" required placeholder="your@email.com">
                         </div>
-
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
                             <input type="tel" id="phone" name="phone" required placeholder="(415) 123-4567">
                         </div>
-
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                            <div class="form-group">
-                                <label for="date">Date *</label>
-                                <input type="date" id="date" name="date" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="time">Time *</label>
-                                <select id="time" name="time" required>
-                                    <option value="">Select time</option>
-                                    <option value="11:00">11:00 AM</option>
-                                    <option value="11:30">11:30 AM</option>
-                                    <option value="12:00">12:00 PM</option>
-                                    <option value="12:30">12:30 PM</option>
-                                    <option value="13:00">1:00 PM</option>
-                                    <option value="13:30">1:30 PM</option>
-                                    <option value="14:00">2:00 PM</option>
-                                    <option value="16:00">4:00 PM</option>
-                                    <option value="16:30">4:30 PM</option>
-                                    <option value="17:00">5:00 PM</option>
-                                    <option value="17:30">5:30 PM</option>
-                                    <option value="18:00">6:00 PM</option>
-                                    <option value="18:30">6:30 PM</option>
-                                    <option value="19:00">7:00 PM</option>
-                                    <option value="19:30">7:30 PM</option>
-                                    <option value="20:00">8:00 PM</option>
-                                    <option value="20:30">8:30 PM</option>
-                                    <option value="21:00">9:00 PM</option>
-                                    <option value="21:30">9:30 PM</option>
-                                </select>
-                            </div>
-                        </div>
-
+                    </div>
+                    <div class="form-row">
                         <div class="form-group">
-                            <label for="guests">Number of Guests *</label>
-                            <select id="guests" name="guests" required>
-                                <option value="">Select number of guests</option>
-                                <option value="1">1 Guest</option>
-                                <option value="2">2 Guests</option>
-                                <option value="3">3 Guests</option>
-                                <option value="4">4 Guests</option>
-                                <option value="5">5 Guests</option>
-                                <option value="6">6 Guests</option>
-                                <option value="7">7 Guests</option>
-                                <option value="8">8 Guests</option>
-                                <option value="9">9 Guests</option>
-                                <option value="10">10 Guests</option>
-                                <option value="11">11 Guests</option>
-                                <option value="12">12 Guests</option>
-                                <option value="more">More than 12 (Call us)</option>
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
                             </select>
                         </div>
-
-                        <div class="form-group">
-                            <label for="message">Special Requests (Optional)</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Any dietary restrictions, special occasions, or seating preferences?"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">
-                            📅 Confirm Reservation
-                        </button>
-                    </form>
-
-                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee; text-align: center;">
-                        <p style="color: var(--text-light); margin-bottom: 1rem;">Or call us directly:</p>
-                        <a href="tel:+14156472222" class="btn btn-secondary">📞 (415) 647-2222</a>
                     </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6+ Guests (Please call)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Special Requests (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any dietary restrictions, special occasions, or seating preferences?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">📅 Confirm Reservation</button>
+                </form>
+                <div class="form-footer">
+                    <p>For parties larger than 6, please call us directly:</p>
+                    <a href="tel:+14156472222" class="btn btn-secondary">📞 (415) 647-2222</a>
                 </div>
             </div>
         </div>
@@ -150,57 +125,11 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>🏔️ Cuisine of Nepal</h3>
-                    <p>Authentic Nepali and Himalayan cuisine in San Francisco, serving exceptional dishes with passion and tradition since 2018.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">🏠 Home</a></li>
-                        <li><a href="about.html">👨‍🍳 About Us</a></li>
-                        <li><a href="menu.html">📋 Full Menu</a></li>
-                        <li><a href="gallery.html">📸 Gallery</a></li>
-                        <li><a href="catering.html">🎉 Catering</a></li>
-                        <li><a href="reviews.html">⭐ Reviews</a></li>
-                        <li><a href="contact.html">📞 Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p style="line-height: 1.8;">
-                        📍 3486b Mission St<br>
-                        San Francisco, CA 94110
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📞 <a href="tel:+14156472222">(415) 647-2222</a><br>
-                        📞 <a href="tel:+14156472224">(415) 647-2224</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📧 <a href="mailto:cuisineofnepal.sf@gmail.com">cuisineofnepal.sf@gmail.com</a>
-                    </p>
-                </div>
+                <div class="footer-section"><h3>🏔️ Cuisine of Nepal</h3><p>Authentic Nepali and Himalayan cuisine in San Francisco.</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-section"><h3>Contact Us</h3><address>3486b Mission St<br>San Francisco, CA 94110</address><address><a href="tel:+14156472222">(415) 647-2222</a></address></div>
             </div>
-
-            <div class="footer-bottom">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                    <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved<br>
-                    <span style="font-size: 0.9rem;">Authentic Himalayan Cuisine in San Francisco, California</span></p>
-                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Terms of Service</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Accessibility</a>
-                    </div>
-                </div>
-                <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
-                    Made with ❤️ by AUGCODEX | Website designed for the best Nepali dining experience
-                </p>
-                <p class="made-by">
-                    Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a>
-                </p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved</p><p class="made-by">Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a></p></div>
         </div>
     </footer>
 

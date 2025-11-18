@@ -13,7 +13,7 @@
 <body>
     <header class="site-header">
         <div class="header-top">
-            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="container">
                 <div>📞 (415) 647-2222 | 📧 cuisineofnepal.sf@gmail.com</div>
                 <div>📍 3486b Mission St, San Francisco, CA 94110</div>
             </div>
@@ -32,29 +32,32 @@
                         <li><a href="reservations.html">Reservations</a></li>
                         <li><a href="catering.html">Catering</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
                     </ul>
+                    <div class="cta-buttons">
+                        <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
+                        <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
+                        <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                    </div>
                 </nav>
-                <div class="cta-buttons">
-                    <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
-                    <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
-                    <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                <div class="header-actions">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span>☰</span></button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="page-hero" style="background-image: linear-gradient(135deg, rgba(108,3,32,0.85), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1608039829574-7078dcd2c182?w=1600&amp;q=80&amp;auto=format&amp;fit=crop'); background-size: cover; background-position: center;">
+        <section class="page-hero" style="background-image: linear-gradient(135deg, rgba(108,3,32,0.85), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1608039829574-7078dcd2c182?w=1600&q=80&auto=format&fit=crop');">
             <div class="container">
                 <h1>We’re Here for Every Occasion</h1>
-                <p>Whether you’re planning an intimate dinner, a corporate lunch, or a grand celebration, the Cuisine of Nepal team is ready to help. Reach out via phone, email, or visit us in Bernal Heights.</p>
-                <div class="info-pill" style="margin-bottom: 1.5rem;">
+                <p>Whether you’re planning an intimate dinner, a corporate lunch, or a grand celebration, the Cuisine of Nepal team is ready to help.</p>
+                <div class="info-pill">
                     <span>📍 3486b Mission St, San Francisco, CA 94110</span>
-                    <span>📞 (415) 647-2222 · (415) 647-2224 · 415.647.2220</span>
+                    <span>📞 (415) 647-2222</span>
                     <span>📧 cuisineofnepal.sf@gmail.com</span>
                 </div>
-                <div class="cta-buttons" style="justify-content: center;">
+                <div class="cta-buttons centered-cta">
                     <a href="tel:+14156472222" class="btn btn-primary">Call Now</a>
                     <a href="mailto:cuisineofnepal.sf@gmail.com" class="btn btn-secondary">Email Chef Prem</a>
                     <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank" class="btn btn-secondary">Get Directions</a>
@@ -69,27 +72,23 @@
                 <div class="contact-grid">
                     <div class="contact-card">
                         <h3>Visit the Restaurant</h3>
-                        <p>
-                            Cuisine of Nepal<br>
-                            3486b Mission St<br>
-                            San Francisco, CA 94110
-                        </p>
+                        <p>Cuisine of Nepal<br>3486b Mission St<br>San Francisco, CA 94110</p>
                         <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank">Open in Google Maps →</a>
                     </div>
                     <div class="contact-card">
                         <h3>Call or Text</h3>
                         <ul>
-                            <li>📞 Main: <a href="tel:+14156472222">(415) 647-2222</a></li>
-                            <li>📞 Reservations: <a href="tel:+14156472224">(415) 647-2224</a></li>
-                            <li>📞 Direct Line: <a href="tel:+14156472220">415.647.2220</a></li>
+                            <li>Main: <a href="tel:+14156472222">(415) 647-2222</a></li>
+                            <li>Reservations: <a href="tel:+14156472224">(415) 647-2224</a></li>
+                            <li>Direct: <a href="tel:+14156472220">415.647.2220</a></li>
                         </ul>
-                        <p style="margin-top: 0.5rem; color: var(--text-light);">Phone hours: Tue–Sun, 11:00 AM – 9:30 PM</p>
+                        <p class="card-note">Phone hours: Tue–Sun, 11 AM – 9:30 PM</p>
                     </div>
                     <div class="contact-card">
-                        <h3>Email &amp; Media</h3>
-                        <p>📧 <a href="mailto:cuisineofnepal.sf@gmail.com">cuisineofnepal.sf@gmail.com</a></p>
+                        <h3>Email & Media</h3>
+                        <p><a href="mailto:cuisineofnepal.sf@gmail.com">cuisineofnepal.sf@gmail.com</a></p>
                         <p>Press &amp; collaborations:<br><a href="mailto:press@cuisineofnepal.com">press@cuisineofnepal.com</a></p>
-                        <p>Response time: same business day</p>
+                        <p class="card-note">Response time: same business day</p>
                     </div>
                     <div class="contact-card">
                         <h3>Business Hours</h3>
@@ -99,7 +98,7 @@
                             <li>Lunch: 11:00 AM – 2:30 PM</li>
                             <li>Dinner: 4:00 PM – 10:00 PM</li>
                         </ul>
-                        <p style="margin-top: 0.5rem;">Walk-ins welcome · Reservations encouraged</p>
+                        <p class="card-note">Walk-ins welcome · Reservations encouraged</p>
                     </div>
                 </div>
             </div>
@@ -109,18 +108,18 @@
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-form">
-                        <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+                        <h3>Send Us a Message</h3>
                         <form>
                             <div class="form-group">
                                 <label for="contact-name">Full Name *</label>
                                 <input type="text" id="contact-name" name="name" placeholder="Chef Prem Tamang" required>
                             </div>
-                            <div class="form-group" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                                <div>
+                            <div class="form-row">
+                                <div class="form-group">
                                     <label for="contact-email">Email *</label>
                                     <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
                                 </div>
-                                <div>
+                                <div class="form-group">
                                     <label for="contact-phone">Phone *</label>
                                     <input type="tel" id="contact-phone" name="phone" placeholder="(415) 555-1234" required>
                                 </div>
@@ -140,21 +139,21 @@
                                 <label for="contact-message">Message *</label>
                                 <textarea id="contact-message" name="message" rows="5" placeholder="Share details like date, guest count, preferred dishes, and any dietary notes." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.75rem;">This is a demo form. A confirmation message will appear when submitted.</p>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            <p class="form-note">This is a demo form. A confirmation message will appear when submitted.</p>
                         </form>
                     </div>
                     <div class="info-list">
-                        <h3>Event &amp; Catering Contacts</h3>
+                        <h3>Event & Catering Contacts</h3>
                         <ul>
-                            <li><strong>Chef Prem Tamang</strong><br>Owner &amp; Executive Chef<br>prem@cuisineofnepal.com</li>
-                            <li><strong>Sonam Sherpa</strong><br>Catering Manager<br>events@cuisineofnepal.com · (415) 555-9876</li>
-                            <li><strong>Media &amp; Partnerships</strong><br>press@cuisineofnepal.com</li>
+                            <li><strong>Chef Prem Tamang</strong><br>Owner & Executive Chef<br>prem@cuisineofnepal.com</li>
+                            <li><strong>Sonam Sherpa</strong><br>Catering Manager<br>events@cuisineofnepal.com</li>
+                            <li><strong>Media & Partnerships</strong><br>press@cuisineofnepal.com</li>
                             <li><strong>Delivery Partners</strong><br>DoorDash · Uber Eats · Grubhub · ezCater</li>
                         </ul>
-                        <div style="margin-top: 1.5rem;">
-                            <h4 style="color: var(--dark-red); margin-bottom: 0.5rem;">Same-Day Requests</h4>
-                            <p style="color: var(--text-dark);">Call us to check availability. We hold a few tables for neighbors and last-minute celebrations.</p>
+                        <div class="info-highlight">
+                            <h4>Same-Day Requests</h4>
+                            <p>Call us to check availability. We hold a few tables for neighbors and last-minute celebrations.</p>
                         </div>
                     </div>
                 </div>
@@ -166,22 +165,7 @@
                 <h2 class="section-title">Find Us on Google Maps</h2>
                 <p class="section-subtitle">Street parking is available on Mission St &amp; Cortland Ave. Paid parking garages are within a 5-minute walk.</p>
                 <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps?q=3486b+Mission+St,+San+Francisco,+CA+94110&amp;output=embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Cuisine of Nepal Location"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="cta-panel">
-                    <h2 style="color: var(--primary-gold); margin-bottom: 1rem;">Planning a Celebration?</h2>
-                    <p style="color: rgba(255,255,255,0.9); max-width: 720px; margin: 0 auto;">
-                        Let us curate a Himalayan feast for your office, birthday, or wedding weekend. We can deliver anywhere in the Bay Area or host private buyouts for up to 70 guests.
-                    </p>
-                    <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
-                        <a href="catering.html" class="btn btn-primary">Explore Catering Options</a>
-                        <a href="https://www.ezcater.com/catering/pvt/cuisine-of-nepal-4?aff" target="_blank" class="btn btn-secondary">Order via ezCater</a>
-                    </div>
+                    <iframe src="https://www.google.com/maps?q=3486b+Mission+St,+San+Francisco,+CA+94110&output=embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Cuisine of Nepal Location"></iframe>
                 </div>
             </div>
         </section>
@@ -193,17 +177,16 @@
                 <div class="footer-section">
                     <h3>🏔️ Cuisine of Nepal</h3>
                     <p>Authentic Nepali and Himalayan cuisine in San Francisco, serving exceptional dishes with passion and tradition since 2018.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <h4 style="color: var(--primary-gold); font-size: 1.1rem; margin-bottom: 1rem;">Follow Us</h4>
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="https://www.facebook.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">📘</a>
-                            <a href="https://www.instagram.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">📷</a>
-                            <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">⭐</a>
-                            <a href="https://twitter.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">🐦</a>
+                    <div class="social-links">
+                        <h4 class="social-title">Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/cuisineofnepal" target="_blank" class="social-icon" aria-label="Facebook">📘</a>
+                            <a href="https://www.instagram.com/cuisineofnepal" target="_blank" class="social-icon" aria-label="Instagram">📷</a>
+                            <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank" class="social-icon" aria-label="Yelp">⭐</a>
+                            <a href="https://twitter.com/cuisineofnepal" target="_blank" class="social-icon" aria-label="Twitter">🐦</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
@@ -212,58 +195,44 @@
                         <li><a href="menu.html">📋 Full Menu</a></li>
                         <li><a href="gallery.html">📸 Gallery</a></li>
                         <li><a href="reservations.html">📅 Reservations</a></li>
-                        <li><a href="catering.html">🎉 Catering</a></li>
-                        <li><a href="reviews.html">⭐ Reviews</a></li>
-                        <li><a href="contact.html">📞 Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h3>Our Services</h3>
                     <ul>
                         <li><a href="#">🍽️ Dine In</a></li>
                         <li><a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank">🛒 Order Online</a></li>
-                        <li><a href="#">🚚 Delivery</a></li>
-                        <li><a href="#">📦 Takeout</a></li>
-                        <li><a href="catering.html">🎊 Catering Services</a></li>
+                        <li><a href="catering.html">🎊 Catering</a></li>
                         <li><a href="#">🎁 Gift Cards</a></li>
-                        <li><a href="#">👥 Private Events</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p style="line-height: 1.8;">
-                        📍 <strong>Address:</strong><br>
+                    <address>
+                        <strong>Address:</strong><br>
                         3486b Mission St<br>
                         San Francisco, CA 94110<br>
-                        <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank" style="color: var(--primary-gold); text-decoration: underline;">Get Directions →</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📞 <strong>Phone:</strong><br>
-                        <a href="tel:+14156472222">(415) 647-2222</a><br>
-                        <a href="tel:+14156472224">(415) 647-2224</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📧 <strong>Email:</strong><br>
+                        <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank" class="footer-link-gold">Get Directions →</a>
+                    </address>
+                    <address>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+14156472222">(415) 647-2222</a>
+                    </address>
+                    <address>
+                        <strong>Email:</strong><br>
                         <a href="mailto:cuisineofnepal.sf@gmail.com">cuisineofnepal.sf@gmail.com</a>
-                    </p>
+                    </address>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                    <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved<br>
-                    <span style="font-size: 0.9rem;">Authentic Himalayan Cuisine in San Francisco, California</span></p>
-                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Terms of Service</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Accessibility</a>
+                <div class="footer-legal">
+                    <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved</p>
+                    <div class="footer-sub-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
                     </div>
                 </div>
-                <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
-                    Made with ❤️ by AUGCODEX | Website designed for the best Nepali dining experience
-                </p>
                 <p class="made-by">
                     Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a>
                 </p>

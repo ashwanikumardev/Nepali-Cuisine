@@ -13,7 +13,7 @@
 <body>
     <header class="site-header">
         <div class="header-top">
-            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="container">
                 <div>📞 (415) 647-2222 | 📧 cuisineofnepal.sf@gmail.com</div>
                 <div>📍 3486b Mission St, San Francisco, CA 94110</div>
             </div>
@@ -28,33 +28,36 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
                         <li><a href="reservations.html">Reservations</a></li>
                         <li><a href="catering.html">Catering</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="cta-buttons">
+                        <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
+                        <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
+                        <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                    </div>
                 </nav>
-                <div class="cta-buttons">
-                    <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
-                    <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
-                    <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                <div class="header-actions">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span>☰</span></button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="page-hero" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(108,3,32,0.85)), url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=1600&amp;q=80&amp;auto=format&amp;fit=crop'); background-size: cover; background-position: center;">
+        <section class="page-hero" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(108,3,32,0.85)), url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=1600&q=80&auto=format&fit=crop');">
             <div class="container">
                 <h1>Experience the Colors of the Himalayas</h1>
-                <p>From sizzling tandoori platters to handcrafted momos, explore how our kitchen celebrates Nepali heritage with vibrant presentations and thoughtful plating.</p>
-                <div class="gallery-meta">
+                <p>From sizzling tandoori platters to handcrafted momos, explore how our kitchen celebrates Nepali heritage with vibrant presentations.</p>
+                <div class="info-pill">
                     <span>🥟 40+ signature dishes</span>
-                    <span>🎉 Private events &amp; catering setups</span>
+                    <span>🎉 Private events & catering</span>
                     <span>📸 Updated Fall 2025</span>
                 </div>
-                <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+                <div class="cta-buttons centered-cta">
                     <a href="reservations.html" class="btn btn-primary">Book a Table</a>
                     <a href="catering.html" class="btn btn-secondary">Plan an Event</a>
                 </div>
@@ -63,131 +66,52 @@
 
         <section>
             <div class="container">
-                <h2 class="section-title">Signature Plates &amp; Moments</h2>
+                <h2 class="section-title">Signature Plates & Moments</h2>
                 <p class="section-subtitle">Tap any photo to view in full-screen. This gallery uses demo content captured by food photographers and friends of the restaurant.</p>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1604908176819-42d447b5285c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Steamed Himalayan momos with chutney">
-                        <div class="gallery-caption">
-                            <h4>Himalayan Momos</h4>
-                            <p>Served with sesame tomato achar</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1604908176819-42d447b5285c?auto=format&fit=crop&w=1200&q=80" alt="Steamed Himalayan momos with chutney" loading="lazy">
+                        <div class="gallery-caption"><h4>Himalayan Momos</h4><p>Served with sesame tomato achar</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Traditional Nepali Thali platter">
-                        <div class="gallery-caption">
-                            <h4>Nepali Thali</h4>
-                            <p>Complete vegetarian feast</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Traditional Nepali Thali platter" loading="lazy">
+                        <div class="gallery-caption"><h4>Nepali Thali</h4><p>Complete vegetarian feast</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1608039829574-7078dcd2c182?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Jhol momo soup with herbs">
-                        <div class="gallery-caption">
-                            <h4>Jhol Momo</h4>
-                            <p>Spicy tomato broth</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1608039829574-7078dcd2c182?auto=format&fit=crop&w=1200&q=80" alt="Jhol momo soup with herbs" loading="lazy">
+                        <div class="gallery-caption"><h4>Jhol Momo</h4><p>Spicy tomato broth</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Tandoori chicken on sizzling plate">
-                        <div class="gallery-caption">
-                            <h4>Tandoori Chicken</h4>
-                            <p>Served on sizzling cast iron</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80" alt="Tandoori chicken on sizzling plate" loading="lazy">
+                        <div class="gallery-caption"><h4>Tandoori Chicken</h4><p>Served on sizzling cast iron</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Colorful cocktail lineup">
-                        <div class="gallery-caption">
-                            <h4>Craft Cocktails</h4>
-                            <p>Spiced chai &amp; Himalayan spritz</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1200&q=80" alt="Colorful cocktail lineup" loading="lazy">
+                        <div class="gallery-caption"><h4>Craft Cocktails</h4><p>Spiced chai & Himalayan spritz</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Assorted Nepali appetizers">
-                        <div class="gallery-caption">
-                            <h4>Chef’s Sampler</h4>
-                            <p>Samosa, pakora &amp; sekuwa</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Assorted Nepali appetizers" loading="lazy">
+                        <div class="gallery-caption"><h4>Chef’s Sampler</h4><p>Samosa, pakora & sekuwa</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Private dining room setup with flowers">
-                        <div class="gallery-caption">
-                            <h4>Private Dining</h4>
-                            <p>Intimate 25-guest setup</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=1200&q=80" alt="Private dining room setup with flowers" loading="lazy">
+                        <div class="gallery-caption"><h4>Private Dining</h4><p>Intimate 25-guest setup</p></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Vegan Nepali dishes on table">
-                        <div class="gallery-caption">
-                            <h4>Vegan Favorites</h4>
-                            <p>Seasonal farmer’s market produce</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Clay oven and grill flames">
-                        <div class="gallery-caption">
-                            <h4>Tandoor in Action</h4>
-                            <p>Marinated meats &amp; naan</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Family style feast on long table">
-                        <div class="gallery-caption">
-                            <h4>Family Feast</h4>
-                            <p>Perfect for celebrations</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Dessert and chai service">
-                        <div class="gallery-caption">
-                            <h4>Sweet Finish</h4>
-                            <p>Gulab jamun &amp; masala chai</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Outdoor catering trays">
-                        <div class="gallery-caption">
-                            <h4>Catering Trays</h4>
-                            <p>Delivered across the Bay Area</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80" alt="Vegan Nepali dishes on table" loading="lazy">
+                        <div class="gallery-caption"><h4>Vegan Favorites</h4><p>Seasonal farmer’s market produce</p></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="bg-light">
             <div class="container">
                 <div class="stat-cards">
-                    <div class="stat-card">
-                        <h3>4.8 ★</h3>
-                        <p>Average rating across Google, Yelp &amp; DoorDash</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>70+</h3>
-                        <p>Catering events completed in 2025</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>12</h3>
-                        <p>New seasonal specials each year</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>100%</h3>
-                        <p>Menu customizable for vegetarian &amp; gluten-free guests</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="cta-panel">
-                    <h2 style="color: var(--primary-gold); margin-bottom: 0.5rem;">Host Your Next Shoot or Event</h2>
-                    <p style="color: rgba(255,255,255,0.9); max-width: 720px; margin: 0 auto;">
-                        Need fresh photos, influencer content, or a private tasting? Our team can prepare custom plating, floral styling, and lighting to showcase Nepali cuisine at its best.
-                    </p>
-                    <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
-                        <a href="contact.html" class="btn btn-secondary">Coordinate with Our Team</a>
-                        <a href="reservations.html" class="btn btn-primary">Reserve a Chef’s Table</a>
-                    </div>
+                    <div class="stat-card"><h3>4.8 ★</h3><p>Average rating across Google, Yelp & DoorDash</p></div>
+                    <div class="stat-card"><h3>70+</h3><p>Catering events completed in 2025</p></div>
+                    <div class="stat-card"><h3>12</h3><p>New seasonal specials each year</p></div>
+                    <div class="stat-card"><h3>100%</h3><p>Menu customizable for dietary needs</p></div>
                 </div>
             </div>
         </section>
@@ -198,78 +122,46 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>🏔️ Cuisine of Nepal</h3>
-                    <p>Authentic Nepali and Himalayan cuisine in San Francisco, serving exceptional dishes with passion and tradition since 2018.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <h4 style="color: var(--primary-gold); font-size: 1.1rem; margin-bottom: 1rem;">Follow Us</h4>
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="https://www.facebook.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">📘</a>
-                            <a href="https://www.instagram.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">📷</a>
-                            <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">⭐</a>
-                            <a href="https://twitter.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">🐦</a>
+                    <p>Authentic Nepali and Himalayan cuisine in San Francisco.</p>
+                    <div class="social-links">
+                        <h4 class="social-title">Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/cuisineofnepal" target="_blank" class="social-icon" aria-label="Facebook">📘</a>
+                            <a href="https://www.instagram.com/cuisineofnepal" target="_blank" class="social-icon" aria-label="Instagram">📷</a>
+                            <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank" class="social-icon" aria-label="Yelp">⭐</a>
+                            <a href="https://twitter.com/cuisineofnepal" target="_blank" class="social-icon" aria-label="Twitter">🐦</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">🏠 Home</a></li>
                         <li><a href="about.html">👨‍🍳 About Us</a></li>
                         <li><a href="menu.html">📋 Full Menu</a></li>
-                        <li><a href="gallery.html">📸 Gallery</a></li>
-                        <li><a href="reservations.html">📅 Reservations</a></li>
-                        <li><a href="catering.html">🎉 Catering</a></li>
-                        <li><a href="reviews.html">⭐ Reviews</a></li>
                         <li><a href="contact.html">📞 Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h3>Our Services</h3>
                     <ul>
                         <li><a href="#">🍽️ Dine In</a></li>
                         <li><a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank">🛒 Order Online</a></li>
-                        <li><a href="#">🚚 Delivery</a></li>
-                        <li><a href="#">📦 Takeout</a></li>
-                        <li><a href="catering.html">🎊 Catering Services</a></li>
-                        <li><a href="#">🎁 Gift Cards</a></li>
-                        <li><a href="#">👥 Private Events</a></li>
+                        <li><a href="catering.html">🎊 Catering</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p style="line-height: 1.8;">
-                        📍 <strong>Address:</strong><br>
+                    <address>
+                        <strong>Address:</strong><br>
                         3486b Mission St<br>
                         San Francisco, CA 94110<br>
-                        <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank" style="color: var(--primary-gold); text-decoration: underline;">Get Directions →</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📞 <strong>Phone:</strong><br>
-                        <a href="tel:+14156472222">(415) 647-2222</a><br>
-                        <a href="tel:+14156472224">(415) 647-2224</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📧 <strong>Email:</strong><br>
-                        <a href="mailto:cuisineofnepal.sf@gmail.com">cuisineofnepal.sf@gmail.com</a>
-                    </p>
+                        <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank" class="footer-link-gold">Get Directions →</a>
+                    </address>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                    <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved<br>
-                    <span style="font-size: 0.9rem;">Authentic Himalayan Cuisine in San Francisco, California</span></p>
-                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Terms of Service</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Accessibility</a>
-                    </div>
-                </div>
-                <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
-                    Made with ❤️ by AUGCODEX | Website designed for the best Nepali dining experience
-                </p>
+                <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved</p>
                 <p class="made-by">
                     Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a>
                 </p>

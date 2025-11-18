@@ -13,7 +13,7 @@
 <body>
     <header class="site-header">
         <div class="header-top">
-            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="container">
                 <div>📞 (415) 647-2222 | 📧 cuisineofnepal.sf@gmail.com</div>
                 <div>📍 3486b Mission St, San Francisco, CA 94110</div>
             </div>
@@ -31,55 +31,46 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="reservations.html">Reservations</a></li>
                         <li><a href="catering.html">Catering</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="reviews.html" class="active">Reviews</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="cta-buttons">
+                        <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
+                        <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
+                        <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                    </div>
                 </nav>
-                <div class="cta-buttons">
-                    <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
-                    <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
-                    <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                <div class="header-actions">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span>☰</span></button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="page-hero" style="background-image: linear-gradient(120deg, rgba(108,3,32,0.95), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&amp;fit=crop&amp;w=1600&amp;q=80'); background-size: cover; background-position: center;">
+        <section class="page-hero" style="background-image: linear-gradient(120deg, rgba(108,3,32,0.95), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1600&q=80');">
             <div class="container">
                 <h1>Guest Reviews &amp; Community Love</h1>
                 <p>Thousands of Bay Area neighbors, travelers, and corporate partners trust Cuisine of Nepal for authentic flavors and heartfelt hospitality.</p>
                 <div class="info-pill">
                     <span>⭐ 4.8 average rating</span>
                     <span>💬 2,300+ verified reviews</span>
-                    <span>🏙️ Serving San Francisco since 2018</span>
+                    <span>🏙️ Serving SF since 2018</span>
                 </div>
-                <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+                <div class="cta-buttons centered-cta">
                     <a href="https://www.google.com/search?q=cuisine+of+nepal+sf+reviews" target="_blank" class="btn btn-secondary">Leave a Google Review</a>
                     <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank" class="btn btn-primary">View Yelp Profile</a>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="bg-light">
             <div class="container">
                 <div class="stat-cards">
-                    <div class="stat-card">
-                        <h3>4.9 ★</h3>
-                        <p>Google Reviews (1,100+ ratings)</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>4.7 ★</h3>
-                        <p>Yelp Community (800+ check-ins)</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>4.8 ★</h3>
-                        <p>DoorDash &amp; Uber Eats combined</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Top 5</h3>
-                        <p>“Best Nepali Restaurants in SF” — Eater SF</p>
-                    </div>
+                    <div class="stat-card"><h3>4.9 ★</h3><p>Google Reviews (1,100+)</p></div>
+                    <div class="stat-card"><h3>4.7 ★</h3><p>Yelp Community (800+)</p></div>
+                    <div class="stat-card"><h3>4.8 ★</h3><p>DoorDash & Uber Eats</p></div>
+                    <div class="stat-card"><h3>Top 5</h3><p>“Best Nepali in SF” — Eater</p></div>
                 </div>
             </div>
         </section>
@@ -93,82 +84,35 @@
                         <div class="review-rating">★★★★★</div>
                         <p>“The momos are out of this world. Perfect wrappers, juicy filling, and chutneys that pack flavor without overpowering the dish. Feels like Kathmandu in San Francisco.”</p>
                         <div class="review-author">– Priya S., Google Local Guide</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">Visited October 2025</div>
                     </div>
                     <div class="review-card">
                         <div class="review-rating">★★★★★</div>
                         <p>“We booked Cuisine of Nepal for our office Diwali lunch via ezCater. Arrived hot, beautifully labeled, and everyone raved about the vegan options.”</p>
                         <div class="review-author">– Marcus L., ezCater Corporate Client</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">125-person catering</div>
                     </div>
                     <div class="review-card">
                         <div class="review-rating">★★★★☆</div>
                         <p>“Cozy space with attentive staff. The thali platter lets you sample everything. Recommend pairing with the house chai or mango lassi.”</p>
                         <div class="review-author">– Angela R., Yelp Elite</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">Date night, September 2025</div>
                     </div>
                     <div class="review-card">
                         <div class="review-rating">★★★★★</div>
                         <p>“Chef Prem’s jhol momo converted my partner into a dumpling fan. We order weekly on DoorDash and the quality is always consistent.”</p>
                         <div class="review-author">– David K., DoorDash Customer</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">Delivery to SoMa</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-rating">★★★★★</div>
-                        <p>“Hands down the most authentic Nepali cuisine in the Bay. Try the goat curry combo and thank me later.”</p>
-                        <div class="review-author">– Chef Tenzing, Industry Friend</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">Chef collaboration dinner</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-rating">★★★★★</div>
-                        <p>“We hosted my parents’ anniversary here. The team decorated the private room with marigolds and built a custom pescatarian menu.”</p>
-                        <div class="review-author">– Lina G., Private Event Host</div>
-                        <div style="color: var(--text-light); font-size: 0.85rem;">40-guest buyout</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="bg-light">
             <div class="container">
                 <h2 class="section-title">Where to Review Us</h2>
-                <p class="section-subtitle">Pick your favorite platform and share a few words. Screenshots or photos of your meal are always appreciated!</p>
+                <p class="section-subtitle">Pick your favorite platform and share a few words. Your feedback helps our small business thrive!</p>
                 <div class="contact-grid">
-                    <div class="contact-card">
-                        <h3>Google</h3>
-                        <p>Helps new guests find us quickly.</p>
-                        <a href="https://www.google.com/search?q=cuisine+of+nepal+sf+reviews" target="_blank">Write a Google Review →</a>
-                    </div>
-                    <div class="contact-card">
-                        <h3>Yelp</h3>
-                        <p>Great for detailed stories &amp; photos.</p>
-                        <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank">Visit Yelp Profile →</a>
-                    </div>
-                    <div class="contact-card">
-                        <h3>DoorDash &amp; Uber Eats</h3>
-                        <p>Let delivery guests know what to order.</p>
-                        <a href="https://www.doordash.com/store/cuisine-of-nepal-san-francisco-77287/" target="_blank">Rate on DoorDash →</a>
-                    </div>
-                    <div class="contact-card">
-                        <h3>ezCater</h3>
-                        <p>Share feedback on large orders.</p>
-                        <a href="https://www.ezcater.com/catering/pvt/cuisine-of-nepal-4?aff" target="_blank">Review on ezCater →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="cta-panel">
-                    <h2 style="color: var(--primary-gold); margin-bottom: 0.5rem;">Your Voice Matters</h2>
-                    <p style="color: rgba(255,255,255,0.85); max-width: 720px; margin: 0 auto;">
-                        Honest feedback helps us improve our spice blends, portion sizes, and service. Tag @cuisineofnepal on Instagram for a chance to be featured in our gallery.
-                    </p>
-                    <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
-                        <a href="mailto:cuisineofnepal.sf@gmail.com" class="btn btn-secondary">Share Feedback via Email</a>
-                        <a href="https://www.instagram.com/cuisineofnepal" target="_blank" class="btn btn-primary">Tag Us on Instagram</a>
-                    </div>
+                    <div class="contact-card"><h3>Google</h3><p>Helps new guests find us quickly.</p><a href="https://www.google.com/search?q=cuisine+of+nepal+sf+reviews" target="_blank">Write a Google Review →</a></div>
+                    <div class="contact-card"><h3>Yelp</h3><p>Great for detailed stories & photos.</p><a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank">Visit Yelp Profile →</a></div>
+                    <div class="contact-card"><h3>DoorDash</h3><p>Let delivery guests know what to order.</p><a href="https://www.doordash.com/store/cuisine-of-nepal-san-francisco-77287/" target="_blank">Rate on DoorDash →</a></div>
+                    <div class="contact-card"><h3>ezCater</h3><p>Share feedback on large orders.</p><a href="https://www.ezcater.com/catering/pvt/cuisine-of-nepal-4?aff" target="_blank">Review on ezCater →</a></div>
                 </div>
             </div>
         </section>
@@ -179,81 +123,26 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>🏔️ Cuisine of Nepal</h3>
-                    <p>Authentic Nepali and Himalayan cuisine in San Francisco, serving exceptional dishes with passion and tradition since 2018.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <h4 style="color: var(--primary-gold); font-size: 1.1rem; margin-bottom: 1rem;">Follow Us</h4>
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="https://www.facebook.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">📘</a>
-                            <a href="https://www.instagram.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">📷</a>
-                            <a href="https://www.yelp.com/biz/cuisine-of-nepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">⭐</a>
-                            <a href="https://twitter.com/cuisineofnepal" target="_blank" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: var(--transition);" onmouseover="this.style.background='var(--primary-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">🐦</a>
-                        </div>
-                    </div>
+                    <p>Authentic Nepali and Himalayan cuisine in San Francisco.</p>
                 </div>
-
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">🏠 Home</a></li>
-                        <li><a href="about.html">👨‍🍳 About Us</a></li>
-                        <li><a href="menu.html">📋 Full Menu</a></li>
-                        <li><a href="gallery.html">📸 Gallery</a></li>
-                        <li><a href="reservations.html">📅 Reservations</a></li>
-                        <li><a href="catering.html">🎉 Catering</a></li>
-                        <li><a href="reviews.html">⭐ Reviews</a></li>
-                        <li><a href="contact.html">📞 Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-section">
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="#">🍽️ Dine In</a></li>
-                        <li><a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank">🛒 Order Online</a></li>
-                        <li><a href="#">🚚 Delivery</a></li>
-                        <li><a href="#">📦 Takeout</a></li>
-                        <li><a href="catering.html">🎊 Catering Services</a></li>
-                        <li><a href="#">🎁 Gift Cards</a></li>
-                        <li><a href="#">👥 Private Events</a></li>
-                    </ul>
-                </div>
-
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p style="line-height: 1.8;">
-                        📍 <strong>Address:</strong><br>
-                        3486b Mission St<br>
-                        San Francisco, CA 94110<br>
-                        <a href="https://maps.google.com/?q=3486b+Mission+St,+San+Francisco,+CA+94110" target="_blank" style="color: var(--primary-gold); text-decoration: underline;">Get Directions →</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📞 <strong>Phone:</strong><br>
-                        <a href="tel:+14156472222">(415) 647-2222</a><br>
-                        <a href="tel:+14156472224">(415) 647-2224</a>
-                    </p>
-                    <p style="line-height: 1.8; margin-top: 1rem;">
-                        📧 <strong>Email:</strong><br>
-                        <a href="mailto:cuisineofnepal.sf@gmail.com">cuisineofnepal.sf@gmail.com</a>
-                    </p>
+                    <address>3486b Mission St<br>San Francisco, CA 94110</address>
+                    <address><a href="tel:+14156472222">(415) 647-2222</a></address>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                    <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved<br>
-                    <span style="font-size: 0.9rem;">Authentic Himalayan Cuisine in San Francisco, California</span></p>
-                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Terms of Service</a>
-                        <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Accessibility</a>
-                    </div>
-                </div>
-                <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
-                    Made with ❤️ by AUGCODEX | Website designed for the best Nepali dining experience
-                </p>
-                <p class="made-by">
-                    Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a>
-                </p>
+                <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved</p>
+                <p class="made-by">Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a></p>
             </div>
         </div>
     </footer>

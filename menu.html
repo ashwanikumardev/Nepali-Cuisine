@@ -13,7 +13,7 @@
     <!-- Header -->
     <header class="site-header">
         <div class="header-top">
-            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="container">
                 <div>📞 (415) 647-2222 | 📧 cuisineofnepal.sf@gmail.com</div>
                 <div>📍 3486b Mission St, San Francisco, CA 94110</div>
             </div>
@@ -27,28 +27,31 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="menu.html" class="active">Menu</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="reservations.html">Reservations</a></li>
                         <li><a href="catering.html">Catering</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="cta-buttons">
+                        <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
+                        <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
+                        <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                    </div>
                 </nav>
-                <div class="cta-buttons">
-                    <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary btn-order">Order Online</a>
-                    <a href="reservations.html" class="btn btn-secondary btn-reserve">Reserve Table</a>
-                    <a href="tel:+14156472222" class="btn btn-tertiary btn-call">Call Us</a>
+                <div class="header-actions">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu"><span>☰</span></button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 4rem 0; min-height: auto;">
+    <section class="page-hero">
         <div class="container">
-            <h2 style="font-size: clamp(2.5rem, 6vw, 4rem);">📋 Our Menu</h2>
-            <p style="font-size: clamp(1.1rem, 2.5vw, 1.5rem);">Discover authentic Nepali and Himalayan flavors</p>
+            <h1>📋 Our Menu</h1>
+            <p>Discover authentic Nepali and Himalayan flavors</p>
         </div>
     </section>
 
@@ -56,70 +59,54 @@
     <section>
         <div class="container">
             <!-- Appetizers -->
-            <div style="margin-bottom: 4rem;">
+            <div class="menu-category">
                 <h2 class="section-title">🥟 Appetizers</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1608039829574-7078dcd2c182?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Himalayan Momo" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1608039829574-7078dcd2c182?auto=format&fit=crop&w=800&q=80" alt="Himalayan Momo" loading="lazy">
                         <div class="menu-item-content">
-                            <h3>Himalayan Momo (Steamed Dumplings)</h3>
-                            <p>Six dumplings served with homemade sesame, chili & tomato chutney.</p>
-                            <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0;">Chicken | Pork | Vegetable</p>
+                            <h3>Himalayan Momo</h3>
+                            <p>Six dumplings with sesame, chili & tomato chutney.</p>
+                            <p class="menu-item-options">Chicken | Pork | Vegetable</p>
                             <p class="price">$10.99</p>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Jhol Momo" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80" alt="Jhol Momo" loading="lazy">
                         <div class="menu-item-content">
-                            <h3>Jhol Momo (Dumpling Soup)</h3>
-                            <p>Dumplings in Chef Prem's tomato, chili & yogurt soup with roasted cashews & sesame.</p>
-                            <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0;">Chicken | Vegetable</p>
+                            <h3>Jhol Momo (Soup)</h3>
+                            <p>Dumplings in Chef Prem's tomato, chili & yogurt soup.</p>
+                            <p class="menu-item-options">Chicken | Vegetable</p>
                             <p class="price">$14.99</p>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Samosa" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Samosa" loading="lazy">
                         <div class="menu-item-content">
-                            <h3>Samosa (Fried Golden Pocket)</h3>
-                            <p>Two samosas with mint & tamarind sauce.</p>
-                            <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0;">Lamb | Vegetarian</p>
+                            <h3>Samosa</h3>
+                            <p>Two fried pockets with mint & tamarind sauce.</p>
+                            <p class="menu-item-options">Lamb | Vegetarian</p>
                             <p class="price">$8.99</p>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Vegetable Pakora" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80" alt="Vegetable Pakora" loading="lazy">
                         <div class="menu-item-content">
                             <h3>Vegetable Pakora</h3>
-                            <p>Crispy fritters made with mixed vegetables and chickpea flour.</p>
+                            <p>Crispy fritters with mixed vegetables & chickpea flour.</p>
                             <p class="price">$7.99</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Nepali Chicken Wings" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Nepali Chicken Wings</h3>
-                            <p>Spicy chicken wings marinated in Nepali spices.</p>
-                            <p class="price">$11.99</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Aloo Tikki" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Aloo Tikki</h3>
-                            <p>Crispy potato patties served with tamarind and mint chutney.</p>
-                            <p class="price">$6.99</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Curries -->
-            <div style="margin-bottom: 4rem;">
+            <div class="menu-category">
                 <h2 class="section-title">🍛 Curry Combos</h2>
                 <p class="section-subtitle">All combos served with lentils, rice, naan, and chutney</p>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chicken Cashew Cream Curry" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Chicken Cashew Cream Curry" loading="lazy">
                         <div class="menu-item-content">
                             <h3>Chicken Cashew Cream Curry</h3>
                             <p>Tender chicken in creamy cashew sauce with aromatic spices.</p>
@@ -127,7 +114,7 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Spinach &amp; Chicken Cream Curry" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80" alt="Spinach & Chicken Cream Curry" loading="lazy">
                         <div class="menu-item-content">
                             <h3>Spinach & Chicken Cream Curry</h3>
                             <p>Chicken cooked with fresh spinach in a creamy sauce.</p>
@@ -135,15 +122,7 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Lamb Curry Combo" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Lamb Curry Combo</h3>
-                            <p>Tender lamb pieces in traditional Nepali curry sauce.</p>
-                            <p class="price">$23.99</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Goat Curry Combo" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=800&q=80" alt="Goat Curry Combo" loading="lazy">
                         <div class="menu-item-content">
                             <h3>Goat Curry Combo</h3>
                             <p>Bone-in goat meat slow-cooked in aromatic spices.</p>
@@ -154,71 +133,24 @@
             </div>
 
             <!-- Rice & Noodles -->
-            <div style="margin-bottom: 4rem;">
+            <div class="menu-category">
                 <h2 class="section-title">🍜 Rice & Noodles</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chicken Biryani" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&q=80" alt="Chicken Biryani" loading="lazy">
                         <div class="menu-item-content">
                             <h3>Chicken Biryani</h3>
-                            <p>Aromatic basmati rice cooked with spiced chicken, herbs, and saffron.</p>
+                            <p>Aromatic basmati rice with spiced chicken, herbs, and saffron.</p>
                             <p class="price">$17.99</p>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Nepali Chow Mein" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Nepali Chow Mein" loading="lazy">
                         <div class="menu-item-content">
                             <h3>Nepali Chow Mein</h3>
-                            <p>Stir-fried noodles with vegetables and your choice of protein.</p>
-                            <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0;">Chicken | Vegetable | Shrimp</p>
+                            <p>Stir-fried noodles with vegetables and protein.</p>
+                            <p class="menu-item-options">Chicken | Vegetable | Shrimp</p>
                             <p class="price">$13.99</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Fried Rice" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Nepali Fried Rice</h3>
-                            <p>Wok-tossed rice with eggs, vegetables, and Nepali spices.</p>
-                            <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0;">Chicken | Vegetable | Shrimp</p>
-                            <p class="price">$12.99</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tandoori -->
-            <div style="margin-bottom: 4rem;">
-                <h2 class="section-title">🔥 Tandoori Specialties</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1476124369481-0c337b629640?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tandoori Chicken" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Tandoori Chicken</h3>
-                            <p>Marinated chicken grilled in traditional tandoor oven, served with mint chutney.</p>
-                            <p class="price">$16.99</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chicken Tikka" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Chicken Tikka</h3>
-                            <p>Boneless chicken pieces marinated in yogurt and spices, tandoor-grilled.</p>
-                            <p class="price">$15.99</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Thali -->
-            <div style="margin-bottom: 4rem;">
-                <h2 class="section-title">🍽️ Traditional Thali</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Nepali Thali" loading="lazy">
-                        <div class="menu-item-content">
-                            <h3>Nepali Thali (Traditional Platter)</h3>
-                            <p>A complete meal with rice, dal, curry, vegetables, pickle, and papad.</p>
-                            <p class="price">$18.99</p>
                         </div>
                     </div>
                 </div>
@@ -227,11 +159,11 @@
     </section>
 
     <!-- CTA -->
-    <section style="background: linear-gradient(135deg, #6C0320 0%, #8B0000 100%); color: white; text-align: center; padding: 4rem 0;">
-        <div class="container">
-            <h2 style="font-size: clamp(2rem, 5vw, 3rem); color: var(--primary-gold); margin-bottom: 1.5rem;">Ready to Order?</h2>
-            <p style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 2rem;">Order online for delivery or pickup, or reserve your table!</p>
-            <div class="cta-buttons" style="justify-content: center;">
+    <section class="bg-dark text-light">
+        <div class="container text-center">
+            <h2 class="section-title text-gold">Ready to Order?</h2>
+            <p class="section-subtitle">Order online for delivery or pickup, or reserve a table!</p>
+            <div class="cta-buttons centered-cta">
                 <a href="https://onlineorders.novatab.com/ordering/restaurant/menu?restaurant_uid=f52c1ee9-b7bd-44ad-8e7f-08fdd33c4679" target="_blank" class="btn btn-primary">🛒 Order Online Now</a>
                 <a href="reservations.html" class="btn btn-secondary">📅 Reserve Table</a>
             </div>
@@ -242,31 +174,11 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>🏔️ Cuisine of Nepal</h3>
-                    <p>Authentic Nepali and Himalayan cuisine in San Francisco.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>3486b Mission St<br>San Francisco, CA 94110</p>
-                    <p>📞 (415) 647-2222</p>
-                </div>
+                <div class="footer-section"><h3>🏔️ Cuisine of Nepal</h3><p>Authentic Nepali and Himalayan cuisine in San Francisco.</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-section"><h3>Contact</h3><address>3486b Mission St<br>San Francisco, CA 94110</address><address><a href="tel:+14156472222">(415) 647-2222</a></address></div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved</p>
-                <p class="made-by">
-                    Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a>
-                </p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2018–2025 Cuisine of Nepal | All Rights Reserved</p><p class="made-by">Crafted by <strong>ASHWANI</strong> · <a href="https://www.augcodex.site/" target="_blank" rel="noopener">AUGCODEX</a></p></div>
         </div>
     </footer>
 
