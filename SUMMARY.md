@@ -171,4 +171,3 @@ Enjoy your beautiful new website! 🎉
 ---
 
 **© 2018–2025 Cuisine of Nepal | All Rights Reserved**
-

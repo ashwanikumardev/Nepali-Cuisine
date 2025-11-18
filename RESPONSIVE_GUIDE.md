@@ -241,4 +241,3 @@
 ---
 
 **Your website looks PERFECT on ALL devices! 🎉**
-

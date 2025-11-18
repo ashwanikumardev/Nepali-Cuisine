@@ -5,57 +5,66 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // MOBILE MENU TOGGLE
     // ============================================
-
-    // Create mobile menu toggle button
     const headerContent = document.querySelector('.header-content');
     const mainNav = document.querySelector('.main-nav');
 
     if (headerContent && mainNav) {
-        // Check if button doesn't already exist
-        if (!document.querySelector('.mobile-menu-toggle')) {
-            const menuToggle = document.createElement('button');
+        let menuToggle = document.querySelector('.mobile-menu-toggle');
+        
+        // Create toggle button if it doesn't exist in HTML
+        if (!menuToggle) {
+            menuToggle = document.createElement('button');
             menuToggle.className = 'mobile-menu-toggle';
             menuToggle.setAttribute('aria-label', 'Toggle Menu');
             menuToggle.innerHTML = '<span>☰</span>';
 
-            // Insert after logo
-            const logo = document.querySelector('.logo');
-            if (logo) {
-                logo.after(menuToggle);
+            const headerActions = document.createElement('div');
+            headerActions.className = 'header-actions';
+            
+            // Clone the primary "Reserve" button for mobile header
+            const reserveBtn = document.querySelector('.cta-buttons .btn-secondary');
+            if(reserveBtn) {
+                const mobileReserveBtn = reserveBtn.cloneNode(true);
+                mobileReserveBtn.textContent = "Reserve";
+                mobileReserveBtn.style.textTransform = "uppercase";
+                mobileReserveBtn.style.fontSize = "0.8rem";
+                mobileReserveBtn.style.padding = "0.6rem 1rem";
+                headerActions.appendChild(mobileReserveBtn);
             }
+            
+            headerActions.appendChild(menuToggle);
+            headerContent.appendChild(headerActions);
+        }
 
-            // Toggle menu on click
-            menuToggle.addEventListener('click', function() {
-                mainNav.classList.toggle('active');
-                const icon = this.querySelector('span');
-                icon.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
-            });
+        const icon = menuToggle.querySelector('span');
 
-            // Close menu when clicking outside
-            document.addEventListener('click', function(e) {
-                if (!mainNav.contains(e.target) && !menuToggle.contains(e.target)) {
-                    mainNav.classList.remove('active');
-                    const icon = menuToggle.querySelector('span');
-                    if (icon) icon.textContent = '☰';
+        const toggleMenu = () => {
+            const isActive = mainNav.classList.toggle('active');
+            document.body.classList.toggle('no-scroll', isActive);
+            if (icon) {
+                icon.textContent = isActive ? '✕' : '☰';
+                icon.style.fontSize = isActive ? '2rem' : '1.5rem';
+            }
+        };
+
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close menu when a link is clicked
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    toggleMenu();
                 }
             });
-
-            // Close menu when clicking on a link
-            const navLinks = mainNav.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mainNav.classList.remove('active');
-                    const icon = menuToggle.querySelector('span');
-                    if (icon) icon.textContent = '☰';
-                });
-            });
-        }
+        });
     }
 
     // ============================================
     // SMOOTH SCROLLING
     // ============================================
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -75,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // ACTIVE NAVIGATION
     // ============================================
-
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.main-nav a').forEach(link => {
         if (link.getAttribute('href') === currentPage) {
@@ -86,29 +94,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // HEADER SCROLL EFFECT
     // ============================================
-
     const header = document.querySelector('.site-header');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-
-        lastScroll = currentScroll;
-    });
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
     
-    // Form Validation
+    // ============================================
+    // FORM VALIDATION & NOTIFICATION
+    // ============================================
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Basic validation
             let isValid = true;
             const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
             
@@ -122,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             if (isValid) {
-                showNotification('Thank you! Your submission has been received. We will contact you shortly.', 'success');
+                showNotification('Thank you! Your message has been sent.', 'success');
                 form.reset();
             } else {
                 showNotification('Please fill in all required fields.', 'error');
@@ -145,61 +149,22 @@ function showNotification(message, type = 'success') {
         color: white;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        z-index: 10000;
-        animation: slideIn 0.3s ease-out;
+        z-index: 10001;
+        transform: translateX(120%);
+        transition: transform 0.3s ease-out;
     `;
     
     document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+    }, 10);
     
     setTimeout(() => {
-        notification.style.animation = 'slideOut 0.3s ease-out';
+        notification.style.transform = 'translateX(120%)';
         setTimeout(() => notification.remove(), 300);
     }, 3000);
 }
-
-// Add CSS animations
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .main-nav ul {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--dark-red);
-            padding: 1rem;
-        }
-        
-        .main-nav ul.show {
-            display: flex;
-        }
-    }
-`;
-document.head.appendChild(style);
 
 // Gallery Lightbox
 function openLightbox(imageSrc) {
@@ -217,6 +182,8 @@ function openLightbox(imageSrc) {
         justify-content: center;
         z-index: 10000;
         cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     `;
     
     const img = document.createElement('img');
@@ -224,9 +191,13 @@ function openLightbox(imageSrc) {
     img.style.cssText = 'max-width: 90%; max-height: 90%; border-radius: 10px;';
     
     lightbox.appendChild(img);
-    lightbox.addEventListener('click', () => lightbox.remove());
+    lightbox.addEventListener('click', () => {
+        lightbox.style.opacity = '0';
+        setTimeout(() => lightbox.remove(), 300);
+    });
     
     document.body.appendChild(lightbox);
+    setTimeout(() => lightbox.style.opacity = '1', 10);
 }
 
 // Initialize gallery items
@@ -241,4 +212,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-

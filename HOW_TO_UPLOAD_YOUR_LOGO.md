@@ -219,4 +219,3 @@ Desktop/project_files/
 ---
 
 **Need a custom logo designed? Consider hiring a designer on Fiverr or 99designs!**
-

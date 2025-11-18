@@ -167,4 +167,3 @@ Optimizations:
 ---
 
 **© 2018–2025 Cuisine of Nepal | Modern Design by AI**
-

@@ -194,4 +194,3 @@ Your website now has:
 ---
 
 **© 2018–2025 Cuisine of Nepal | All Rights Reserved**
-
