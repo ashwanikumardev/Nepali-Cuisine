@@ -3,37 +3,38 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // ============================================
-    // MOBILE MENU TOGGLE
+    // HEADER & MOBILE NAVIGATION
     // ============================================
     const headerContent = document.querySelector('.header-content');
     const mainNav = document.querySelector('.main-nav');
+    const desktopCta = document.querySelector('.header-content .cta-buttons');
 
     if (headerContent && mainNav) {
+        // Ensure mobile toggle button exists
         let menuToggle = document.querySelector('.mobile-menu-toggle');
-        
-        // Create toggle button if it doesn't exist in HTML
         if (!menuToggle) {
             menuToggle = document.createElement('button');
             menuToggle.className = 'mobile-menu-toggle';
             menuToggle.setAttribute('aria-label', 'Toggle Menu');
             menuToggle.innerHTML = '<span>☰</span>';
-
+            
             const headerActions = document.createElement('div');
             headerActions.className = 'header-actions';
-            
-            // Clone the primary "Reserve" button for mobile header
-            const reserveBtn = document.querySelector('.cta-buttons .btn-secondary');
-            if(reserveBtn) {
-                const mobileReserveBtn = reserveBtn.cloneNode(true);
-                mobileReserveBtn.textContent = "Reserve";
-                mobileReserveBtn.style.textTransform = "uppercase";
-                mobileReserveBtn.style.fontSize = "0.8rem";
-                mobileReserveBtn.style.padding = "0.6rem 1rem";
-                headerActions.appendChild(mobileReserveBtn);
-            }
-            
             headerActions.appendChild(menuToggle);
             headerContent.appendChild(headerActions);
+        }
+
+        // Clone CTA buttons for the mobile menu if they don't exist
+        if (desktopCta && !mainNav.querySelector('.mobile-cta-container')) {
+            const mobileCtaContainer = document.createElement('div');
+            mobileCtaContainer.className = 'mobile-cta-container';
+            
+            const clonedButtons = desktopCta.cloneNode(true);
+            Array.from(clonedButtons.children).forEach(button => {
+                mobileCtaContainer.appendChild(button);
+            });
+            
+            mainNav.appendChild(mobileCtaContainer);
         }
 
         const icon = menuToggle.querySelector('span');
@@ -52,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleMenu();
         });
 
-        // Close menu when a link is clicked
+        // Close menu when any link inside it is clicked
         mainNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 if (mainNav.classList.contains('active')) {
