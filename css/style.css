@@ -343,3 +343,14 @@ section { padding: 5rem 0; }
 }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ============================================
+   DESKTOP-SPECIFIC OVERRIDES
+   ============================================ */
+@media (min-width: 1025px) {
+    /* Per request, only show "Call Us" button in the desktop header */
+    .main-nav .cta-buttons .btn-order,
+    .main-nav .cta-buttons .btn-reserve {
+        display: none;
+    }
+}
